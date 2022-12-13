@@ -19,9 +19,7 @@ class Solution {
         }
 
         for (int idx : arr) {
-            if (idx > 1) {
-                answer++;
-            }
+            if (idx > 1) answer++;
         }
         return answer;
     }
