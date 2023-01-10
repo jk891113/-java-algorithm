@@ -14,4 +14,17 @@ class Solution {
         if (answer == A.length()) return -1;
         return answer;
     }
+
+    public int solution2(String A, String B) {
+        String tempB = B.repeat(2);
+        return tempB.indexOf(A);
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        solution.solution2("hello", "ohell");
+        solution.solution2("apple", "elppa");
+        solution.solution2("atat", "tata");
+        solution.solution2("abc", "abc");
+    }
 }
